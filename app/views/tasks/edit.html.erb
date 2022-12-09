@@ -1,0 +1,15 @@
+<div><%= render 'tasks/header'%></div>
+<h1>Editing task</h1>
+
+<%= render "form", task: @task %>
+
+<br>
+
+<div class="d-flex">
+<div class=" p-1">
+  <%= link_to "Show this task", @task , class: "btn btn-secondary"%> 
+</div>
+<div class=" p-1">
+  <%= link_to "Back to tasks", tasks_path, class: "btn btn-secondary" %>
+</div>
+</div>
